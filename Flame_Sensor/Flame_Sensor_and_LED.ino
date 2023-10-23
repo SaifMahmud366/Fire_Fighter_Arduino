@@ -1,23 +1,22 @@
 #define Fire_sensor 8
 #define Buzzer 9
 #define RedLED 10
-#define GreenLED 11 // Define the pin for the green LED
+#define GreenLED 11
 #define Relay_Pin 7
 
-
 #define ldelay 500
-#define bdelay 500
 
 void setup() {
     Serial.begin(9600);
     pinMode(Fire_sensor, INPUT);
     pinMode(Buzzer, OUTPUT);
     pinMode(RedLED, OUTPUT);
-    pinMode(GreenLED, OUTPUT); // Set GreenLED pin as OUTPUT
+    pinMode(GreenLED, OUTPUT);
 }
 
-void loop() {
-    if (digitalRead(Fire_sensor) == LOW) {
+void loop() 
+{
+    if (digitalRead(Fire_sensor) == LOW){
         alert();
     } else {
         digitalWrite(Buzzer, LOW);
