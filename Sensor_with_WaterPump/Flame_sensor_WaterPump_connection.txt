@@ -1,0 +1,50 @@
+Step 1
+ 
+Connect a flame sensor to Arduino with a Digital Pin by the below pin configuration:
+ 
+Pin configuration
+ 
+Flame Sensor Arduino
+VCC------------------------------------> +5V
+GND------------------------------------> GND
+DO --------------------------------------> Digital pin8
+ 
+Step 2
+ 
+Next, connect a Piezo Buzzer to Arduino to make an alarm sound. There is no need to use a resistor for the Buzzer connection.
+ 
+Pin configuration
+ 
+Piezo Buzzer Arduino
+(-) ---------------------------------------------> Digital pin9
+(+) ---------------------------------------------> Digital pin GND
+ 
+Step 3
+ 
+Connect Led bulb to Arduino for  a flashing light for the fire alert warning.
+ 
+Pin configuration 
+ 
+Led bulb Arduino
+RED
+(+) --------------------------------------------> Digital pin10
+(-) --------------------------------------------> Digital pin GND
+GREEN
+(+) --------------------------------------------> Digital pin11
+(-) --------------------------------------------> Digital pin GND
+
+ 
+Relay Module
+VCC --------------------------------------- +5v
+GND------------------------------------- GND
+D0 --------------------------------------- Digital Pin 7
+
+
+
+Motor
++ 5v Power Source ------------------------- NO
+Motor + ---------------------------------------- COM
+GND psu + GND motor
+
+We successfully made the hardware connection :).
+
